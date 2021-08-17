@@ -54,8 +54,7 @@ export default function Home() {
       </Head>
       <div className={styles.container}>
         <div className={styles.welcomePageTitle}>
-          <h1>Root</h1>
-          <h3>Select</h3>
+          <h1 className={styles.pageTitle}>TIC TAC TOE</h1>
         </div>
 
         <div className={styles.gameOptionsContainer}>

@@ -1,5 +1,6 @@
 .playerAvatarContainer {
     display: flex;
+    width: 70vw;
     min-height: 10rem;
     margin-top: 1vh;
     margin-bottom: 1rem;

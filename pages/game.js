@@ -58,7 +58,7 @@ export default function Game() {
             </Head>
             <div className={styles.container}>
 
-                <h1 className={styles.pageTitle}>TIC TAC TOE</h1>
+
 
                 {(showConfetti) && (
                     <ConfettiExplosion
