@@ -1,0 +1,53 @@
+.gameButtonContainer {
+	display: flex;
+	justify-content: flex-end;
+}
+
+button.gameButton {
+	padding: 0;
+	z-index: 0;
+	width: 3.5rem;
+	height: 2rem;
+	margin: 0.2rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: 0.8em;
+	overflow: hidden;
+	transition: 0.1s;
+	position: relative;
+	border-radius: 10px;
+	white-space: nowrap;
+	background: rgba(255, 255, 255, 0.3);
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 9px;
+}
+
+.gameButton:focus {
+	outline: none;
+}
+
+.gameButton:hover {
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 9px;
+}
+
+.gameButton:active {
+	font-size: 1.1vw;
+	box-shadow: inset rgba(0, 0, 0, 0.5) 0px 3px 5px;
+}
+
+.gameButton::before {
+	content: '';
+	position: absolute;
+	width: 5rem;
+	height: 3.5rem;
+	z-index: -1;
+	margin-top: -20px;
+	filter: blur(1px);
+	transition: 0.3s ease-out;
+	transform: skewX(-20deg) translateX(10rem);
+	background: linear-gradient(to right, transparent, rgba(82, 81, 81, 0.2), transparent);
+}
+
+.gameButton:hover::before {
+	transform: skewX(-20deg) translateX(-10rem);
+}

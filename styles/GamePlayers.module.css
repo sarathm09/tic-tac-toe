@@ -1,0 +1,42 @@
+.playerAvatarContainer {
+    display: flex;
+    min-height: 10rem;
+    margin-top: 1vh;
+    margin-bottom: 1rem;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background: rgba(236, 244, 246, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.player1,
+.player2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.player1Avatar img,
+.player2Avatar img {
+    margin: 1rem 2rem;
+    height: 7rem;
+    width: 7rem;
+}
+
+.player1Piece,
+.player2Piece {
+    margin: 0rem 1rem;
+    font-size: 3em;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.inactive {
+    color: rgba(34, 33, 33, 0.5);
+    filter: grayscale();
+}
